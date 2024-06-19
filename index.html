@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Irina</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="imagenes/icono-13.png" type="image/x-icon">
+
+
+</head>
+<body>
+    <header>
+        <div></div>
+
+        <h2>TRABAJOS</h2>
+        
+        <p>
+            Hola! Me llamo Irina Voiezki, tengo 19 años. El diseño y los medios de comunicación siempre fueron algunos de mis intereses; es por eso que actualmente estudio Diseño en la Universidad Torcuato Di Tella, y dentro del secundario, decidí elegir la orientación relacionada con los medios. Estos son algunos de mis trabajos que fui haciendo estos años.
+        </p>
+        
+        <h1 class="subrayado">
+            Portfolio
+        </h1>
+
+        <p>
+            <a id="vinculo" href="https://www.behance.net/irinavoiezki" target="_blank" title="Perfil Behance">Behance</a>
+        </p>
+
+    </header>
+
+    <main>
+        <div><a href="imagenes/foto-1.png" data-lightbox="galeria"><img src="imagenes/foto-1.png" alt="foto 1"></a>
+            <h3>CityZen</h3>
+            <button onclick="abrir1();">Más información </button>
+            <div id="modal1">
+                <h3>CityZen</h3>
+                <p> 
+                    CityZen es una exposición ficticia de lo que se conocecomo “Diseño público”. Esta exposición partía de una temática específica, en mi caso la “ciudad”. A partir de eso se crea “CityZen”, una exposición para el MARQ, Museo de Arquitectura y Diseño, centrada en ciertos objetos de descanso, que fueron pensados bajo esa rama del diseño.
+                </p>
+                
+                <button onclick="cerrar1();">Cerrar</button>
+                
+            </div>
+        
+        </div>
+        <div><a href="imagenes/foto2.jpg" data-lightbox="galeria"><img src="imagenes/foto2.jpg" alt="foto 2"></a>
+            <h3>Lámpara de mesa</h3>
+            <button onclick="abrir2();">Más información </button>
+            <div id="modal2">
+                <h3>Lámpara de Mesa</h3>
+                <p> 
+                    Partimos de una silla dada, de la cual debíamos identificar características morfológicas y de material, para luego hacer una lámpara de mesa que siga con esa lógica. La silla con la cual empezamos fue la “Alta Memorial Armchair & Ottoman”.
+                </p>
+                
+                <button onclick="cerrar2();">Cerrar</button>
+                
+            </div>
+        </div>
+        <div><a href="imagenes/foto3.jpg" data-lightbox="galeria"><img src="imagenes/foto3.jpg" alt="foto 3"></a>
+            <h3>Gráfica</h3>
+            <button onclick="abrir3();">Más información </button>
+            <div id="modal3">
+                <h3>Gráfica</h3>
+                <p>
+                    A partir de una gráfica creada poniendo foco en la forma y el color, el objetivo era aplicarla en los distintos espacios de la Universidad Torcuato Di Tella, así como "mockupear" (aplicarla a distintos objetos) en otras superficies.
+
+                </p>  
+                <button onclick="cerrar3();">Cerrar </button>   
+            </div>
+        </div>
+        <div><a href="imagenes/foto4.jpg" data-lightbox="galeria"><img src="imagenes/foto4.jpg" alt="foto 4"></a>
+            <h3>Gráfica</h3>
+            <button onclick="abrir4();">Más información </button>
+            <div id="modal4">
+                <h3>Gráfica</h3>
+                <p>
+                    A partir de una gráfica creada poniendo foco en la forma y el color, el objetivo era aplicarla en los distintos espacios de la Universidad Torcuato Di Tella, así como "mockupear" (aplicarla a distintos objetos) en otras superficies.
+
+                </p>  
+                <button onclick="cerrar4();">Cerrar </button>   
+            </div>
+        </div>
+        
+        <div><a href="imagenes/foto5.jpg" data-lightbox="galeria"><img src="imagenes/foto5.jpg" alt="foto 5"></a>         
+            <h3>Efecto arquitectura</h3>
+            <button onclick="abrir();">Más información </button>
+            <div id="modal">
+                <h3>Efecto Arquitectura</h3>
+                <p>
+                    En base a un barrio ubicado en la Ciudad de Buenos Aires, el objetivo del proyecto era idear un recorrido a partir de una temática puntual dentro de ese barrio. En base a esa elección, la idea era crear un evento y el branding el mismo, creando un itinerario, afiches e intervenciones alrededor del espacio.
+                </p>  
+                <button onclick="cerrar();">Cerrar </button>   
+            </div>
+
+        </div>
+        <div><a href="imagenes/foto6-03.jpg" data-lightbox="galeria"><img src="imagenes/foto6-03.jpg" alt="foto 6"></a>
+            <h3>Vegan Drop</h3>
+            <button onclick="abrir6();">Más información </button>
+            <div id="modal6">
+                <h3>Vegan Drop</h3>
+                <p>
+                    Pensado en el diseño circular y la comida ultra-procesada, la idea era crear un producto que permita que un alimento que suele ser ultra-procesado, pase a ser <strong>auto</strong>-procesado. En mi caso, decidí crear un producto que facilite y permita la producción de leches vegetales en el hogar.
+                </p>  
+                <button onclick="cerrar6();">Cerrar </button>   
+            </div>
+
+        </div>
+
+        <div id="video"><video src="imagenes/Grupo 6_Parra Krieg_Pauluk_Voiezki.mp4" controls></video></div>
+
+        
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        function abrir(){
+            document.getElementById('modal').style.display = "block";
+        }
+
+        function cerrar(){
+            document.getElementById('modal').style.display = "none";
+        }
+
+    </script>
+
+    <script>
+        function abrir1(){
+            document.getElementById('modal1').style.display = "block";
+        }
+
+        function cerrar1(){
+            document.getElementById('modal1').style.display = "none";
+        }
+
+    </script>
+
+    <script>
+        function abrir2(){
+            document.getElementById('modal2').style.display = "block";
+        }
+
+        function cerrar2(){
+            document.getElementById('modal2').style.display = "none";
+        }
+
+    </script>
+
+    <script>
+        function abrir3(){
+            document.getElementById('modal3').style.display = "block";
+        }
+
+        function cerrar3(){
+            document.getElementById('modal3').style.display = "none";
+        }
+
+    </script>
+
+    <script>
+        function abrir4(){
+            document.getElementById('modal4').style.display = "block";
+        }
+
+        function cerrar4(){
+            document.getElementById('modal4').style.display = "none";
+        }
+
+    </script>
+
+    <script>
+        function abrir6(){
+            document.getElementById('modal6').style.display = "block";
+        }
+
+        function cerrar6(){
+            document.getElementById('modal6').style.display = "none";
+        }
+
+    </script>
+
+    <footer>
+        &copy;Irina Voiezki
+        <div></div>        
+    </footer>
+    
+</body>
+</html>

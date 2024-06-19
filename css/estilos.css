@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Quicksand:wght@300..700&display=swap');
+
+
+body {
+    font-family: "Archivo", sans-serif;
+    margin: 3%;
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+}
+
+header{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+}
+
+header p{
+    margin: auto 50px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+header div{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(#74c69d, white);
+    background-size: cover; 
+}
+
+header a {
+    text-decoration: none;
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    border: 5px double  #74c69d;
+    border-radius: 20px;
+    width: 125px;
+    height: 20px;
+    display: block;
+    margin: auto;
+    line-height:23px;
+    padding: 8px;
+    transition: all 1s;
+    transition-delay: 0s;   
+}
+
+header a:hover {
+    border: 5px solid #74c69d;
+    background-color: rgb(41, 41, 41);
+    color: #daffed;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-variation-settings: "wdth" 120;
+}
+
+main {
+
+    width: 100%;
+    margin: 30px auto;
+    border: 5px double #74c69d;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    position:relative;   
+}
+    
+div {
+    width: 30%;
+    margin:20px 10px;
+}
+    
+    
+#video {
+    width: 50%;
+    margin:10px auto;
+}
+    
+    
+img, video { 
+    width: 100%;
+}
+
+img:hover{
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    color: #74c69d;
+    text-align: center;
+}
+
+footer div{
+    height: 100px;
+    width: 100px;
+    background-image: url(../imagenes/icono-13.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    animation-name: animacion;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;   
+}
+
+@keyframes animacion{
+    0%{
+        transform: translateX(0vw) rotate(0deg);
+    }
+    
+    25%{
+        transform: translateX(21vw) rotate(180deg);
+    }
+
+    50%{
+        transform: translateX(42vw) rotate(360deg);
+    }
+
+    75%{
+        transform: translateX(63vw) rotate(540deg);
+    }
+
+    100%{
+        transform: translateX(84vw) rotate(720deg);
+    }
+    
+}
+
+#modal1 {
+    width: 50%;
+    padding: 20px;
+    background-color: #daffed;
+    color: black;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2) ;
+    position: absolute;
+    top: 10% ;
+    left:25% ; 
+    display:none;       
+}
+ 
+#modal2 {
+    width: 50%;
+    padding: 20px;
+    background-color: #daffed;
+    color: black;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2) ;
+    position: absolute;
+    top:10% ;
+    left:25% ; 
+    display:none; 
+}
+
+#modal3 {
+    width: 50%;
+    padding: 20px;
+    background-color: #daffed;
+    color: black;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2) ;
+    position: absolute;
+    top:10% ;
+    left:25% ; 
+    display:none;        
+}
+
+#modal4 {
+    width: 50%;
+    padding: 20px;
+    background-color: #daffed;
+    color: black;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2) ;
+    position: absolute;
+    top:38% ;
+    left:25% ; 
+    display:none; 
+}
+
+#modal {
+    width: 50%;
+    padding: 20px;
+    background-color: #daffed;
+    color: black;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2) ;
+    position: absolute;
+    top:38% ;
+    left:25% ; 
+    display:none;        
+}
+
+#modal6 {
+    width: 50%;
+    padding: 20px;
+    background-color: #daffed;
+    color: black;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2) ;
+    position: absolute;
+    top:38% ;
+    left:25% ; 
+    display:none;        
+}
